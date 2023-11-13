@@ -1,5 +1,5 @@
 {
-  "name": "@ekarpovs/base-user-sql",
+  "name": "@juliusagency/base-user-sql",
   "version": "0.0.0-development",
   "description": "A npm package for use in Node.js projects.",
   "exports": {
@@ -45,14 +45,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JuliusAgency/auth-strategies.git"
+    "url": "git+https://github.com/juliusagency/auth-strategies.git"
   },
   "author": "ekarpovs",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JuliusAgency/auth-strategies/issues"
+    "url": "https://github.com/juliusagency/auth-strategies/issues"
   },
-  "homepage": "https://github.com/JuliusAgency/auth-strategies#readme",
+  "homepage": "https://github.com/juliusagency/auth-strategies#readme",
   "keywords": [
     "npm",
     "javascript",
