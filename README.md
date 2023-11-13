@@ -1,6 +1,6 @@
 ## Base-User-Sql
 
-The base-user-sql package - is a component of the @JuliusAgency/node [packages set](https://github.com/JuliusAgency/node-packages-set) for Nodejs applications.  
+The base-user-sql package - is a component of the @jla/node [packages set](https://github.com/JuliusAgency/node-packages-set) for Nodejs applications.  
 
 <p>
   <a href="https://github.com/JuliusAgency/auth-strategies#readme" target="_blank">
