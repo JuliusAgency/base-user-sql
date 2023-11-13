@@ -1,10 +1,10 @@
 ## Base User Sql
 
-The base-user-sql package - is a component of the @jla/node [packages set](https://github.com/JuliusAgency/node-packages-set) for Nodejs applications.  
+The base-user-sql package - is a component of the @juliusagency/node [packages set](https://github.com/JuliusAgency/node-packages-set) for Nodejs applications.  
 
 <p>
-  <a href="https://www.npmjs.com/package/@jla/base-user-sql" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/@jla/base-user-sql.svg">
+  <a href="https://www.npmjs.com/package/@juliusagency/base-user-sql" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/@juliusagency/base-user-sql.svg">
   </a>
   <a href="https://github.com/JuliusAgency/auth-strategies#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
@@ -19,20 +19,20 @@ The base-user-sql package - is a component of the @jla/node [packages set](https
 
 ### Installation
 ```bash
-  npm install --save @jla/base-user-sql
+  npm install --save @juliusagency/base-user-sql
 ```
 
 ### Pre-conditions:
 ```
-The package is dedicated to be used with the following @jla packages:
-  - @jla/auth-strategies
-  - @jla/base-user-mngr
-  - @jla/auth-jwt or auth-session;  
+The package is dedicated to be used with the following @juliusagency packages:
+  - @juliusagency/auth-strategies
+  - @juliusagency/base-user-mngr
+  - @juliusagency/auth-jwt or auth-session;  
 ```
 
 ### Usage  
 ```
-  import { BaseUser, dBApi } from '@jla/base-user-sql';
+  import { BaseUser, dBApi } from '@juliusagency/base-user-sql';
   
   // setup strategy and auth manager with the BaseUser
   const baseUser = sqlRepository(BaseUser);
@@ -55,7 +55,7 @@ The package is dedicated to be used with the following @jla packages:
 ```
 ### Extend BaseUser (example)
 ```
-import { BaseUser } from "@jla/base-user-sql";
+import { BaseUser } from "@juliusagency/base-user-sql";
 import { Column, Entity } from "typeorm";
 
 @Entity()
