@@ -1,10 +1,10 @@
 ## Base User Sql
 
-The base-user-sql package - is a component of the @JuliusAgency/node [packages set](https://github.com/JuliusAgency/node-packages-set) for Nodejs applications.  
+The base-user-sql package - is a component of the @ekarpovs/node [packages set](https://github.com/JuliusAgency/node-packages-set) for Nodejs applications.  
 
 <p>
-  <a href="https://www.npmjs.com/package/@JuliusAgency/base-user-sql" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/@JuliusAgency/base-user-sql.svg">
+  <a href="https://www.npmjs.com/package/@ekarpovs/base-user-sql" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/@ekarpovs/base-user-sql.svg">
   </a>
   <a href="https://github.com/JuliusAgency/auth-strategies#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
@@ -19,20 +19,20 @@ The base-user-sql package - is a component of the @JuliusAgency/node [packages s
 
 ### Installation
 ```bash
-  npm install --save @JuliusAgency/base-user-sql
+  npm install --save @ekarpovs/base-user-sql
 ```
 
 ### Pre-conditions:
 ```
-The package is dedicated to be used with the following @JuliusAgency packages:
-  - @JuliusAgency/auth-strategies
-  - @JuliusAgency/base-user-mngr
-  - @JuliusAgency/auth-jwt or auth-session;  
+The package is dedicated to be used with the following @ekarpovs packages:
+  - @ekarpovs/auth-strategies
+  - @ekarpovs/base-user-mngr
+  - @ekarpovs/auth-jwt or auth-session;  
 ```
 
 ### Usage  
 ```
-  import { BaseUser, dBApi } from '@JuliusAgency/base-user-sql';
+  import { BaseUser, dBApi } from '@ekarpovs/base-user-sql';
   
   // setup strategy and auth manager with the BaseUser
   const baseUser = sqlRepository(BaseUser);
@@ -55,7 +55,7 @@ The package is dedicated to be used with the following @JuliusAgency packages:
 ```
 ### Extend BaseUser (example)
 ```
-import { BaseUser } from "@JuliusAgency/base-user-sql";
+import { BaseUser } from "@ekarpovs/base-user-sql";
 import { Column, Entity } from "typeorm";
 
 @Entity()

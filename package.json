@@ -1,5 +1,5 @@
 {
-  "name": "@JuliusAgency/base-user-sql",
+  "name": "@ekarpovs/base-user-sql",
   "version": "0.0.0-development",
   "description": "A npm package for use in Node.js projects.",
   "exports": {
