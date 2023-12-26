@@ -1,5 +1,5 @@
 /**
- * Base user definition 
+ * Base user definition
  */
 
 /* eslint-disable indent */
@@ -17,5 +17,4 @@ export class BaseUser {
   password: string;
   @Column()
   createdAt: Date;
-};
-
+}

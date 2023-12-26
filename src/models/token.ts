@@ -1,13 +1,9 @@
 /**
- * Password recovery token definition 
+ * Password recovery token definition
  */
 
 /* eslint-disable indent */
-import {
-  Entity,
-  Column,
-  PrimaryGeneratedColumn,
-} from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('tokens')
 export class Token {
@@ -21,5 +17,4 @@ export class Token {
   createdAt: Date;
   @Column()
   user: string;
-};
-
+}

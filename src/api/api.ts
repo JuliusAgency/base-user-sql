@@ -1,13 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /**
- * 
+ *
  * @param Entity Wrapper for native Db API
- * @returns 
+ * @returns
  */
 
 export const dBApi = (Entity: any) => {
-  // { where: { email: email.toLowerCase() }, }
   const findOne = async (options: any) => {
+    const pkn = getPrimaryKeyName();
+    if ('_id' in options || 'id' in options) {
+      options = { [pkn]: options[pkn] };
+    }
     return await Entity.findOne({ where: options });
   };
 
@@ -15,18 +18,26 @@ export const dBApi = (Entity: any) => {
     return await Entity.remove(row);
   };
 
-  // { "name": "", "email": "", "password": "[encrypted]" }
   const save = async (userObj: any) => {
     return await Entity.save(userObj);
   };
 
   const findById = async (options: any) => {
-    return await Entity.findOne({ where: { _id: options.id } });
+    const pkn = getPrimaryKeyName();
+    return await Entity.findOne({ where: { [pkn]: options[pkn] } });
   };
 
   const findOneAndUpdate = async (filter: any, update: any) => {
+    const pkn = getPrimaryKeyName();
+    if ('_id' in filter || 'id' in filter) {
+      filter = { [pkn]: filter[pkn] };
+    }
     const user = await Entity.findOne({ where: filter });
-    await Entity.update({ _id: user._id }, update);
+    await Entity.update({ [pkn]: user[pkn] }, update);
+  };
+
+  const getPrimaryKeyName = () => {
+    return Entity.metadata.primaryColumns[0].databaseName;
   };
 
   return {
@@ -34,6 +45,7 @@ export const dBApi = (Entity: any) => {
     findOne,
     findOneAndUpdate,
     deleteOne,
-    save
+    save,
+    getPrimaryKeyName,
   };
 };
